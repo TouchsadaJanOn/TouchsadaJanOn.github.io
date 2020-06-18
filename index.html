@@ -7,12 +7,13 @@
        window.onload = function () {
 	var chart = new CanvasJS.Chart("chartContainer",
 	{
+	   theme: "light3",
 		title:{
 			text: "My Computer Languages"
 		},
 		legend: {
-			maxWidth: 350,
-			itemWidth: 120
+			maxWidth: 300,
+			itemWidth: 250
 		},
 		data: [
 		{
@@ -20,10 +21,10 @@
 			showInLegend: true,
 			legendText: "{indexLabel}",
 			dataPoints: [
-				{ y: 4181563, indexLabel: "Python" },
-				{ y: 2175498, indexLabel: "Java" },
-				{ y: 3125844, indexLabel: "C#" },
-				{ y: 1176121, indexLabel: "HTML, JSS, CSS"},
+				{ y: 45, indexLabel: "Python" },
+				{ y: 35, indexLabel: "Java" },
+				{ y: 10, indexLabel: "C#" },
+				{ y: 10, indexLabel: "HTML, JSS, CSS"},
 			]
 		}
 		]
