@@ -1,5 +1,5 @@
 <html>
-    <body style = "background-color:gray">
+
         <h1 style = "background-color:black; 
         color:white; 
         border: 2px solid Tomato;
@@ -9,7 +9,49 @@
         background-color:dodgerblue;
         color:white; 
         border: 2px solid Black; 
-        text-align: center"> Creator: Touchsada Jan On</p>    
-    </body>
+        text-align: center"> Creator: Touchsada Jan On</p>
+         <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "My Computer Languages",
+        fontFamily: "Impact",
+        fontWeight: "normal"
+      },
 
+      legend:{
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      data: [
+      {
+        //startAngle: 45,
+       indexLabelFontSize: 20,
+       indexLabelFontFamily: "Garamond",
+       indexLabelFontColor: "black",
+       indexLabelLineColor: "black",
+       indexLabelPlacement: "outside",
+       type: "doughnut",
+       showInLegend: true,
+       dataPoints: [
+       {  y: 40, legendText:"Python 45%", indexLabel: "Python 45%" },
+       {  y: 30, legendText:"Java 35%", indexLabel: "Java 35%" },
+       {  y: 10, legendText:"C# 10%", indexLabel: "C# 10%" },
+       {  y: 10, legendText:"HTML 10%", indexLabel: "HTML 10%" },
+       {  y: 5, legendText:"JSS 5%", indexLabel: "JSS 5%" },
+       {  y: 5, legendText: "CSS 5%", indexLabel: "CSS 5%"}
+       ]
+     }
+     ]
+   });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <body style = "background-color:white">>
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+    </body>
 </html>
