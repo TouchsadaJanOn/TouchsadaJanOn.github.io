@@ -17,7 +17,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "dark2",
 	title:{
-		text: "My Computer Languages",
+		text: " My Computer Languages ",
 		horizontalAlign: "center"
 	},
 	data: [{
@@ -28,12 +28,12 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		indexLabelFontSize: 17,
 		toolTipContent: " {y} <b>% </b>",
 		dataPoints: [
-			{  y: 45, legendText:"Python 45%", indexLabel: "Python 45%" },
-       		{  y: 35, legendText:"Java 35%", indexLabel: "Java 35%" },
-       		{  y: 10, legendText:"C# 10%", indexLabel: "C# 10%" },
-       		{  y: 10, legendText:"HTML 10%", indexLabel: "HTML 10%" },
-       		{  y: 5, legendText:"JSS 5%", indexLabel: "JSS 5%" },
-       		{  y: 5, legendText: "CSS 5%", indexLabel: "CSS 5%"}
+			{  y: 45, legendText:"Python 45%", indexLabel: "Python 45%" , color: "powderblue"},
+       		{  y: 35, legendText:"Java 35%", indexLabel: "Java 35%" , color: "greenyellow"},
+       		{  y: 10, legendText:"C# 10%", indexLabel: "C# 10%" , color: "darkturquoise"},
+       		{  y: 10, legendText:"HTML 10%", indexLabel: "HTML 10%" , color: "coral"},
+       		{  y: 5, legendText:"JSS 5%", indexLabel: "JSS 5%" , color: "gold"},
+       		{  y: 5, legendText: "CSS 5%", indexLabel: "CSS 5%", color: "maroon"}
 		]
 	}]
 });
