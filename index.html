@@ -10,48 +10,36 @@
         color:white; 
         border: 2px solid Black; 
         text-align: center"> Creator: Touchsada Jan On</p>
-         <script type="text/javascript">
-  window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer",
-    {
-      title:{
-        text: "My Computer Languages",
-        fontFamily: "Impact",
-        fontWeight: "normal"
-      },
+         <script>
+window.onload = function () {
 
-      legend:{
-        verticalAlign: "bottom",
-        horizontalAlign: "center"
-      },
-      data: [
-      {
-        //startAngle: 45,
-       indexLabelFontSize: 20,
-       indexLabelFontFamily: "Garamond",
-       indexLabelFontColor: "black",
-       indexLabelLineColor: "black",
-       indexLabelPlacement: "outside",
-       type: "doughnut",
-       showInLegend: true,
-       dataPoints: [
-       {  y: 45, legendText:"Python 45%", indexLabel: "Python 45%" },
-       {  y: 35, legendText:"Java 35%", indexLabel: "Java 35%" },
-       {  y: 10, legendText:"C# 10%", indexLabel: "C# 10%" },
-       {  y: 10, legendText:"HTML 10%", indexLabel: "HTML 10%" },
-       {  y: 5, legendText:"JSS 5%", indexLabel: "JSS 5%" },
-       {  y: 5, legendText: "CSS 5%", indexLabel: "CSS 5%"}
-       ]
-     }
-     ]
-   });
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "My Computer Languages",
+		horizontalAlign: "left"
+	},
+	data: [{
+		type: "doughnut",
+		startAngle: 60,
+		//innerRadius: 60,
+		indexLabelFontSize: 17,
+		toolTipContent: " {y} <b>% </b>",
+		dataPoints: [
+			{  y: 45, legendText:"Python 45%", indexLabel: "Python 45%" },
+       		{  y: 35, legendText:"Java 35%", indexLabel: "Java 35%" },
+       		{  y: 10, legendText:"C# 10%", indexLabel: "C# 10%" },
+       		{  y: 10, legendText:"HTML 10%", indexLabel: "HTML 10%" },
+       		{  y: 5, legendText:"JSS 5%", indexLabel: "JSS 5%" },
+       		{  y: 5, legendText: "CSS 5%", indexLabel: "CSS 5%"}
+		]
+	}]
+});
+chart.render();
 
-    chart.render();
-  }
-  </script>
-  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <body style = "background-color:white">>
-    <div id="chartContainer" style="height: 300px; width: 80%;">
-    </div>
-    </body>
+}
+</script>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
 </html>
