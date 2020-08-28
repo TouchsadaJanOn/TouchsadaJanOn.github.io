@@ -1,2 +1,2 @@
 # TouchsadaJanOn.github.io
-Collection of files to build my personal website
+UNC BACS Class Website -- Used for BACS 200
