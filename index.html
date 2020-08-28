@@ -10,43 +10,5 @@
         color:white; 
         border: 5px solid Black; 
         text-align: center"> <b> Creator: Touchsada Jan On </b></p>
-         <script>
-window.onload = function () {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "dark2",
-	title:{
-		text: " My Computer Languages ",
-		horizontalAlign: "center"
-	},
-	data: [{
-		type: "doughnut",
-		showInLegend: true,
-		startAngle: 60,
-		//innerRadius: 60,
-		indexLabelFontSize: 17,
-		toolTipContent: " {y} <b>% </b>",
-		dataPoints: [
-			{  y: 45, legendText:"Python 45%", indexLabel: "Python 45%" , color: "powderblue"},
-       		{  y: 35, legendText:"Java 35%", indexLabel: "Java 35%" , color: "greenyellow"},
-       		{  y: 10, legendText:"C# 10%", indexLabel: "C# 10%" , color: "darkturquoise"},
-       		{  y: 10, legendText:"HTML 10%", indexLabel: "HTML 10%" , color: "coral"},
-       		{  y: 5, legendText:"JSS 5%", indexLabel: "JSS 5%" , color: "gold"},
-       		{  y: 5, legendText: "CSS 5%", indexLabel: "CSS 5%", color: "maroon"}
-		]
-	}]
-});
-chart.render();
-
-}
-</script>
-<div id="chartContainer" style="height: 420px; width: 100%; "></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
-<h2 style = "color: white; 
-    border: 5px solid black; 
-    font-size: 200%;
-    text-align: center;"> <b> Check Out My Projects in these Languages </b> </h2>
-</body>
-</html>
+ </body>
+  </html>
